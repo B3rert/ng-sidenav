@@ -1,0 +1,117 @@
+  /*SideNav*/
+
+  .icon_close_head {
+    cursor: pointer;
+}
+
+.head_carr_end {
+    color: #000;
+    font-weight: 300;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+mat-sidenav {
+    width: 365px;
+}
+
+@media screen and (max-width: 365px) {
+    mat-sidenav {
+        width: 100%;
+    }
+}
+
+.sidenav_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Fin SideNav*/
+
+/*Toolbar*/
+
+.icon_toolbar {
+    font-size: 22px;
+}
+
+.toolbarPhone {
+    display: none;
+}
+
+.toolbarPhone, .toolbarlarge {
+    position: fixed !important;
+}
+
+@media screen and (max-width: 767px) {
+    .toolbarlarge {
+        display: none !important;
+    }
+    .toolbarPhone {
+        display: block !important;
+    }
+}
+
+/*Fin Toolbar*/
+
+/*Contendo derecho*/
+
+.container_main::-webkit-scrollbar {
+    width: 7px;
+}
+
+.container_main::-webkit-scrollbar-track {
+    background: #f3c5d3;
+}
+
+.container_main::-webkit-scrollbar-thumb {
+    background-color: #FD306E;
+    border-radius: 20px;
+    border: 3px #f3c5d3;
+}
+
+.container_page {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 65px;
+    position: fixed;
+}
+
+.container_start {
+    width: 190px;
+    height: 100%;
+    float: left;
+    overflow: auto;
+}
+
+.container_main {
+    width: calc(100% - 190px);
+    height: 100%;
+    float: left;
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container_start {
+        display: none;
+    }
+    .container_page {
+        margin-top: 128px;
+    }
+    .container_main {
+        width: 100%;
+    }
+}
+
+.head__sidenav {
+    height: 44px !important;
+}
+
+/*Fin Contendo derecho*/
