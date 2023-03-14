@@ -1,6 +1,6 @@
 # Sidenav Template Angular
 
-Plantilla HTML con menu lateral derecho, y 2 divisiones para el contenido, primera division mas pequeña que la segunda. Cuando la pantalla es muy pequeña el contenido de la primera division pasa a estar en un sidenav izquierdo.
+Plantilla HTML con menu lateral derecho, y 2 divisiones para el contenido, primera division mas pequeña que la segunda. Cuando la pantalla es muy pequeña el contenido de la primera division pasa a estar en un sidenav izquierdo con Angular Meterial.
 
 ## Vista previa
 
@@ -299,3 +299,7 @@ export class HomeComponent {
  }
 }
 ```
+
+## Demo
+
+Puede ver una demostración del proyecto [aquí.](https://b3rert.github.io/ng-sidenav/)
