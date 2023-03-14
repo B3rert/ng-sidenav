@@ -13,6 +13,7 @@ export class HomeComponent {
  @ViewChild('sidenavend')
  sidenavend!: MatSidenav;
 
+ //Abrir cerrar Sidenav
  close(reason: string) {
    this.sidenav.close();
    this.sidenavend.close();
