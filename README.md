@@ -1,5 +1,25 @@
 # Sidenav Template Angular
 
+Plantilla HTML con menu lateral derecho, y 2 divisiones para el contenido, primera division mas pequeña que la segunda. Cuando la pantalla es muy pequeña el contenido de la primera division pasa a estar en un sidenav izquierdo.
+
+## Vista previa
+
+### Pantalla grande (sidenav derecho cerrado)
+
+![Screenshot](sidenavclose.png)
+
+### Pantalla grande (sidenav derecho abierto)
+
+![Screenshot](sidenavopen.png)
+
+### Pantalla pequeña (sidenav izquierdo cerrado)
+
+![Screenshot](sidenavclosephone.png)
+
+### Pantalla grande (sidenav izquierdo abierto)
+
+![Screenshot](sidenavopenphone.png)
+
 ## Recursos necesarios
 
 ### Angular material 
