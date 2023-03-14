@@ -1,27 +1,73 @@
-# SideBar
+# Sidenav Template Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+## Recursos necesarios
 
-## Development server
+### Bootstrap 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para instalar bootstrap para angular cli en su proyecto ejecute el siguiente comando: 
 
-## Code scaffolding
+```bash
+ng add @ng-bootstrap/ng-bootstrap
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Si necesita más información puede ver la [documentación oficial.](https://ng-bootstrap.github.io/#/home)
 
-## Build
+### Angular material 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para instalar Angular Material para angular cli en su proyecto ejecute el siguiente comando: 
 
-## Running unit tests
+```bash
+ng add @angular/material
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Si necesita más información puede ver la [documentación oficial.](https://material.angular.io/)
 
-## Running end-to-end tests
+# Implementacion de la plantilla en un proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Immmportación componentes de angular material
 
-## Further help
+Para usar la plantilla son necesarios varuios componentes de angular material. Estos deben configurarse de manera global por lo que se deben hacer las siguientes importaciones en el archivo **app.module.ts**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```typescript
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+```
+
+El Modulo de importaciones deberá verse de la siguiente manera 
+
+```typescript
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    //Angular material
+    MatSidenavModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule
+    //fin angular material
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
+
+## Creacion de componentes
+
+Los nombres de los componentes que se vayan a utilizar pueden varias, para esta plantilla se utilizaron ciertos nombre que puede cambiar segun lo requiera su proyecto.
+
+### HomeComponent 
+
+Este componente contiene todo lo necesario para mostrar la plantilla inicial.
+
+Para crear el componente en angular cli use el siguiente comando:
+```bash
+ng g c components/home
+```
