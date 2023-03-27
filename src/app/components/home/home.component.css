@@ -92,7 +92,7 @@ mat-sidenav {
 
 .container_main {
     width: calc(100% - 190px);
-    height: 100%;
+   height: calc(100% - 64px);
     float: left;
     overflow: auto;
 }
